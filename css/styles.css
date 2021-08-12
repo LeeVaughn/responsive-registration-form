@@ -1,0 +1,11 @@
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+
+/* Main Styles --------------------- */
+
+/* Media Queries ------------------- */
+@media (min-width: 768px) {
+  
+}
