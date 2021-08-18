@@ -1,12 +1,12 @@
 /* Base Styles --------------------- */
 * {
   box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
 body {
   display: flex;
   justify-content: center;
-  font-family: 'Merriweather', serif;
 }
 
 h1,
@@ -24,11 +24,11 @@ h1 {
 
 h2 {
   padding: 1.5rem 1rem 1rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: .93rem;
+  font-size: 1rem;
   color: darkgrey;
 }
 
@@ -59,6 +59,32 @@ label {
   color: grey;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 1rem 0 12rem 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+button {
+  margin: 1rem 0;
+  height: 4rem;
+  width: 90%;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: lightseagreen;
+}
+
 /* Main Styles --------------------- */
 #intro {
   margin: auto;
@@ -72,7 +98,7 @@ label {
   margin: 1rem 0;
   padding: 0 1rem;
   border: 0;
-  border-radius: 10px;
+  border-radius: 7px;
   height: 3rem;
   color: grey;
   background-color: whitesmoke;
@@ -105,24 +131,28 @@ label[for=zip] {
   text-align: right; /* for IE Edge */
 }
 
-#options p {
-  padding: 1rem .5rem;
-  width: 100%;
-  text-align: left;
-}
-
 #options {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+#options legend {
+  padding: 1.5rem 0 .5rem 0;
+}
+
+#options p {
+  padding: .75rem .5rem;
+  width: 100%;
+  text-align: left;
+}
+
 #options label  {
-  padding: 1rem  0;
+  padding: .5rem  0;
   width: 85%;
 }
 
 #options input {
-  margin: 1rem .5rem;
+  margin: .5rem .5rem;
 }
 
 #options #text {
@@ -131,7 +161,7 @@ label[for=zip] {
 
 #other-topics {
   border: 0;
-  border-radius: 10px;
+  border-radius: 7px;
   height: 8rem;
   width: 100%;
   resize: none;
