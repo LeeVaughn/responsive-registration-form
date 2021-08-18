@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+form {
+  background-color: lightsteelblue;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -29,7 +33,7 @@ h2 {
 
 p {
   font-size: 1rem;
-  color: darkgrey;
+  color: grey;
 }
 
 span {
@@ -59,6 +63,17 @@ label {
   color: grey;
 }
 
+input {
+  background-color: whitesmoke;
+}
+
+input:focus {
+  background-color: palegoldenrod;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  outline: none;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -82,7 +97,7 @@ button {
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  background-color: lightseagreen;
+  background-color: steelblue;
 }
 
 /* Main Styles --------------------- */
@@ -101,7 +116,6 @@ button {
   border-radius: 7px;
   height: 3rem;
   color: grey;
-  background-color: whitesmoke;
 }
 
 #name, #email, #phone, #address, #city, #state {
