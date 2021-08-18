@@ -40,6 +40,9 @@ span {
 }
 
 fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: auto;
   padding-bottom: 1rem;
   width: 90%;
@@ -47,7 +50,7 @@ fieldset {
 
 legend {
   margin-top: 0.1rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -69,7 +72,7 @@ label {
   margin: 1rem 0;
   padding: 0 1rem;
   border: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 3rem;
   color: grey;
   background-color: whitesmoke;
@@ -81,6 +84,10 @@ label {
 
 #name, #email {
   font-style: italic;
+}
+
+label[for=zip] {
+  width: 100%;
 }
 
 #zip {
@@ -96,6 +103,40 @@ label {
 }
 ::-webkit-input-placeholder {
   text-align: right; /* for IE Edge */
+}
+
+#options p {
+  padding: 1rem .5rem;
+  width: 100%;
+  text-align: left;
+}
+
+#options {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#options label  {
+  padding: 1rem  0;
+  width: 85%;
+}
+
+#options input {
+  margin: 1rem .5rem;
+}
+
+#options #text {
+  padding: 1rem 0;
+}
+
+#other-topics {
+  border: 0;
+  border-radius: 10px;
+  height: 8rem;
+  width: 100%;
+  resize: none;
+  color: grey;
+  background-color: whitesmoke;
 }
 
 /* Media Queries ------------------- */
