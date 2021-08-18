@@ -37,10 +37,10 @@
         <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX">
 
         <label for="address">Street Address</label>
-        <input type="text" id="address" name="address">
+        <input type="text" id="address" name="address" placeholder="Enter your address">
 
         <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input type="text" id="city" name="city" placeholder="Enter your city">
 
         <label for="state">State</label>
         <select id="state" name="state">
@@ -108,28 +108,28 @@
         <legend>Newsletter</legend>
 
         <p>Select the newsletters you would like to receive:</p>
-        <input type="checkbox" name="html-news" value="html-news">
+        <input type="checkbox" id="html-news" name="html-news" value="html-news">
         <label for="html-news">HTML News</label>
 
-        <input type="checkbox" name="css-news" value="css-news">
+        <input type="checkbox" id="css-news" name="css-news" value="css-news">
         <label for="css-news">CSS News</label>
 
-        <input type="checkbox" name="js-news" value="js-news">
+        <input type="checkbox" id="js-news" name="js-news" value="js-news">
         <label for="js-news">JavaScript News</label>
 
         <p>Newsletter format:</p>
-        <input type="radio" name="html" value="html">
+        <input type="radio" id="html" name="format" value="html">
         <label for="html">HTML</label>
 
-        <input type="radio" name="plain-text" value="plain-text">
+        <input type="radio" id="plain-text" name="format" value="plain-text">
         <label for="plain-text">Plain text</label>
 
         <p id="text">Other topics you'd like to hear about:</p>
-        <textarea id="other-topics" name="message" rows="10" cols="30"></textarea>
+        <textarea id="other-topics" name="message" rows="10" cols="30" placeholder="Enter your suggestions here..."></textarea>
       </fieldset>
 
       <footer>
-        <button type="button">Sign Up</button>
+        <button type="submit">Sign Up</button>
 
         <p>Copyright The Code Review</p>
       </footer>
