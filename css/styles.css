@@ -63,11 +63,11 @@ label {
   color: grey;
 }
 
-input {
+input, select, textarea {
   background-color: whitesmoke;
 }
 
-input:focus {
+input:focus, select:focus, textarea:focus {
   background-color: palegoldenrod;
   -webkit-transition: 1.5s;
   transition: 1.5s;
@@ -181,7 +181,17 @@ label[for=zip] {
   width: 100%;
   resize: none;
   color: grey;
-  background-color: whitesmoke;
+}
+
+/* https://www.encodedna.com/css-tutorials/how-to-align-placeholder-text-using-css.htm */
+#other-topics::placeholder {
+  text-align: left; /* for Chrome, Firefox, Opera */
+}
+:-ms-input-placeholder {
+  text-align: left; /* for IE 10-11 */
+}
+::-webkit-input-placeholder {
+  text-align: left; /* for IE Edge */
 }
 
 /* Media Queries ------------------- */
@@ -217,7 +227,6 @@ label[for=zip] {
 
   footer {
     margin: auto;
-    width: 100;
   }
 
   button {
