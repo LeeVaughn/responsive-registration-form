@@ -162,11 +162,12 @@ label[for=zip] {
 
 #options label  {
   padding: .5rem  0;
-  width: 85%;
+  width: 90%;
 }
 
 #options input {
-  margin: .5rem .5rem;
+  margin: .5rem 0;
+  width: 10%
 }
 
 #options #text {
@@ -185,4 +186,41 @@ label[for=zip] {
 
 /* Media Queries ------------------- */
 @media (min-width: 768px) {
+  span, fieldset, footer, #intro {
+    width: 50%
+  }
+
+  p #intro {
+    font-size: .9rem;;
+  }
+
+  fieldset {
+    flex-direction: row;
+  }
+
+  #info {
+    display: flex;
+    align-items: center;
+  }
+
+  #info label {
+    width: 35%;
+  }
+
+  #name, #email, #phone, #address, #city, #state {
+    width: 65%;
+  }
+
+  #zip {
+    width: 25%;
+  }
+
+  footer {
+    margin: auto;
+    width: 100;
+  }
+
+  button {
+    width: 100%;
+  }
 }
