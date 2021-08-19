@@ -145,6 +145,16 @@ label[for=zip] {
   text-align: right; /* for IE Edge */
 }
 
+#info input[type="email"]::placeholder {
+  text-align: right; /* for Chrome, Firefox, Opera */
+}
+:-ms-input-placeholder {
+  text-align: right; /* for IE 10-11 */
+}
+::-webkit-input-placeholder {
+  text-align: right; /* for IE Edge */
+}
+
 #options {
   flex-direction: row;
   flex-wrap: wrap;
